@@ -1,0 +1,74 @@
+/* =================GENERAL================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    height: 100vh;
+}
+
+
+/* =================FORM================= */
+
+.mainContainer {
+    width: 480px;
+    border: 15px solid #999;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainContainer .formBox {
+    padding: 28px 0px;
+}
+
+.mainContainer .formBox label {
+    display: block;
+    /* transform: translate(0, -2.75rem); */
+    margin-top: -44px;
+    margin-left: 3px;
+    color: green;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.mainContainer .formBox input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #111;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: 'Roboto', sans-serif;
+    color: #2F4F4F;
+}
+
+.mainContainer .formBox input:focus {
+    border-bottom: 2px solid red;
+    outline: none;
+    transition: 0.4s all ease-in;
+}
+
+.mainContainer .formBox input:placeholder-shown+label {
+    visibility: hidden;
+}
+
+.mainContainer .button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.mainContainer .button:hover {
+    cursor: pointer;
+    background-color: #2F4F4F;
+}
+
+.mainContainer .button:focus {
+    outline: none;
+}
